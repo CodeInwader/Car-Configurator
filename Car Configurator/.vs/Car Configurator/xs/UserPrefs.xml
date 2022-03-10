@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{EBFB61BD-DF5A-B6CF-7434-86EDFCEE8033}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraRotation.cs">
+    <Files>
+      <File FileName="Assets/Scripts/CameraRotation.cs" Line="25" Column="13" />
+      <File FileName="Assets/Scripts/ChangingParts.cs" />
+      <File FileName="Assets/Scripts/IndexSeter.cs" />
+      <File FileName="Assets/Scripts/Animation.cs" />
+      <File FileName="Assets/Scripts/DOTweenForSpoiler.cs" />
+      <File FileName="Assets/Scripts/DOTweenForWheals.cs" Line="36" Column="68" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eb78264a-f261-457a-9499-bbcd717128a4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
