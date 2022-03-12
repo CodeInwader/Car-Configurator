@@ -3,22 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+
+
+
 public class DOTweenForWheals : MonoBehaviour
 {
     public Vector3 PosVector;
-    public Vector3 lastCameraPosition;
-    public Vector3 lastCameraRotation;
     public Transform whealPosTransform;
-    
     public GameObject camera;
-    
+
+    public DOTweenInfo info;
+
+    private void Start()
+    {
+        DOTweenInfo.lastCameraPosition = camera.transform.position;
+        DOTweenInfo.lastCameraRotation = camera.transform.rotation.eulerAngles;
+
+       
+
+    }
+
     private void Update()
     {
+        if (camera.transform.position == PosVector)
+        {
+            info.isOnlastTransform = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            camera.transform.DOMove(lastCameraPosition, 1);
+            info.watchingParts = false;
 
-            camera.transform.DORotate(lastCameraRotation, 1);
+            camera.transform.DOMove(DOTweenInfo.lastCameraPosition, 1);
+
+            camera.transform.DORotate(DOTweenInfo.lastCameraRotation, 1);
             
         }
     }
@@ -27,19 +45,33 @@ public class DOTweenForWheals : MonoBehaviour
 
     private void OnMouseDown()
     {
-      SetPositionToWheal();
+        
+
+        if (info.isOnlastTransform == true)
+        {
+            info.isOnlastTransform = false;
+            SetPositionToWheal();
+        }
+       
     }
 
     void SetPositionToWheal()
     {
-        lastCameraPosition = camera.transform.position;
-        lastCameraRotation = camera.transform.rotation.eulerAngles;
+
+
+
+        info.watchingParts = true;
+
+        DOTweenInfo.lastCameraPosition = camera.transform.position;
+        DOTweenInfo.lastCameraRotation = camera.transform.rotation.eulerAngles;
 
         PosVector = whealPosTransform.position;
         camera.transform.DOMove(PosVector, 1);
 
         PosVector = whealPosTransform.rotation.eulerAngles;
         camera.transform.DORotate(PosVector, 1);
+
+        PosVector = whealPosTransform.position;
     }
 
 

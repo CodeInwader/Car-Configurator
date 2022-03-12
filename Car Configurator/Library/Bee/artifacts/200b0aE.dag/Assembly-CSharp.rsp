@@ -354,6 +354,7 @@
 "Assets/Scripts/ChangingParts.cs"
 "Assets/Scripts/DOTweenForSpoiler.cs"
 "Assets/Scripts/DOTweenForWheals.cs"
+"Assets/Scripts/DOTweenInfo.cs"
 "Assets/Scripts/IndexSeter.cs"
 -langversion:9.0
 
