@@ -22,6 +22,6 @@ public class DOTweenInfo : MonoBehaviour
              isOnlastTransform = true;
           }
 
-       
+
     }
 }

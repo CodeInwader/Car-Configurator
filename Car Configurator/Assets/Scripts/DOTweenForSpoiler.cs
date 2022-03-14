@@ -18,8 +18,9 @@ public class DOTweenForSpoiler : MonoBehaviour
     {
 
 
-        if (info.isOnlastTransform != false)
+        if (info.isOnlastTransform == true)
         {
+            info.isOnlastTransform = false;
             SetPositionToSpoiler();
         }
 
@@ -27,9 +28,6 @@ public class DOTweenForSpoiler : MonoBehaviour
 
     void SetPositionToSpoiler()
     {
-
-
-        info.isOnlastTransform = false;
 
         info.watchingParts = true;
 

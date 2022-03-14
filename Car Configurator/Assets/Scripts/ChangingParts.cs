@@ -10,24 +10,7 @@ public class Colours
     public Material colour;
 }
 
-/*
-[System.Serializable]
-public class Spoilers
-{
-    public string name;
-    public GameObject spoiler;
-}
-*/
 
-/*
-[System.Serializable]
-public class Wheals
-{
-    public string name;
-    public GameObject wheals;
-}
-
-*/
 
 
 public class ChangingParts : MonoBehaviour
@@ -35,8 +18,7 @@ public class ChangingParts : MonoBehaviour
 
 
     List<Colours> listOfColours = new List<Colours>();
-    //List<Spoilers> listOfSpoilers = new List<Spoilers>();
-    //List<Wheals> listOfWheals = new List<Wheals>();
+   
 
     public List<GameObject> spoilers = new List<GameObject>();
     public List<GameObject> wheals = new List<GameObject>();
@@ -50,11 +32,14 @@ public class ChangingParts : MonoBehaviour
    public static int indexForSpoilers = 0;
     public static int indexForWheals = 0;
 
+   
 
     private void Start()
     {
         wheals[3].SetActive(true);
         colour = GetComponent<Colours>();
+
+       
     }
 
     public void SetColour()

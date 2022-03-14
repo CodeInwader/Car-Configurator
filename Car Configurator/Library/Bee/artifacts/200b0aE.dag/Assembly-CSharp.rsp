@@ -356,6 +356,9 @@
 "Assets/Scripts/DOTweenForWheals.cs"
 "Assets/Scripts/DOTweenInfo.cs"
 "Assets/Scripts/IndexSeter.cs"
+"Assets/Scripts/SaveData.cs"
+"Assets/Scripts/saveManager.cs"
+"Assets/Scripts/SaveScript.cs"
 -langversion:9.0
 
 /deterministic
