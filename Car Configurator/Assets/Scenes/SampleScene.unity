@@ -378,7 +378,6 @@ GameObject:
   - component: {fileID: 134763382}
   - component: {fileID: 134763381}
   - component: {fileID: 134763380}
-  - component: {fileID: 134763383}
   m_Layer: 5
   m_Name: Button (8)
   m_TagString: Untagged
@@ -450,14 +449,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 134763383}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -500,21 +499,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134763378}
   m_CullTransparentMesh: 1
---- !u!114 &134763383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 134763378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 5
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!1 &157389160
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,7 +856,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3431016573918631267, guid: 64e4b86f9b5c0da458c695e94f14aa13, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3431016573918631267, guid: 64e4b86f9b5c0da458c695e94f14aa13, type: 3}
       propertyPath: m_LocalPosition.x
@@ -932,7 +916,6 @@ GameObject:
   - component: {fileID: 273365571}
   - component: {fileID: 273365570}
   - component: {fileID: 273365569}
-  - component: {fileID: 273365572}
   m_Layer: 5
   m_Name: Button (9)
   m_TagString: Untagged
@@ -1004,10 +987,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 273365572}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1054,21 +1037,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273365567}
   m_CullTransparentMesh: 1
---- !u!114 &273365572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 273365567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 6
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!4 &278959948 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1165753456, guid: 1dd2da93bc00620458c3bfd2117ea038, type: 3}
@@ -1091,7 +1059,6 @@ GameObject:
   - component: {fileID: 305807159}
   - component: {fileID: 305807158}
   - component: {fileID: 305807157}
-  - component: {fileID: 305807160}
   m_Layer: 5
   m_Name: Button (6)
   m_TagString: Untagged
@@ -1163,14 +1130,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305807160}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1213,21 +1180,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305807155}
   m_CullTransparentMesh: 1
---- !u!114 &305807160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305807155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 3
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!4 &329051082 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1165753456, guid: 1dd2da93bc00620458c3bfd2117ea038, type: 3}
@@ -1993,7 +1945,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579868734}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &583196985
 BoxCollider:
@@ -2233,7 +2185,6 @@ GameObject:
   - component: {fileID: 625520393}
   - component: {fileID: 625520392}
   - component: {fileID: 625520391}
-  - component: {fileID: 625520394}
   m_Layer: 5
   m_Name: Button (7)
   m_TagString: Untagged
@@ -2305,14 +2256,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625520394}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2355,21 +2306,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625520389}
   m_CullTransparentMesh: 1
---- !u!114 &625520394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625520389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 4
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!1 &649116888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,7 +2338,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579868734}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!65 &649116890
 BoxCollider:
@@ -2480,7 +2416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3006637248201062161, guid: 2b141b3197c7ead4f947acdaafb2a80e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3006637248201062161, guid: 2b141b3197c7ead4f947acdaafb2a80e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2600,7 +2536,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2636,7 +2572,7 @@ RectTransform:
   - {fileID: 809632519}
   - {fileID: 1540314672}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2735,7 +2671,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 81.643, y: 106.595, z: 126.187}
 --- !u!1001 &724099802
 PrefabInstance:
@@ -2746,7 +2682,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5199760297874716912, guid: 4608b5bf6dfa24b44a1aa4247fcfcb69, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5199760297874716912, guid: 4608b5bf6dfa24b44a1aa4247fcfcb69, type: 3}
       propertyPath: m_LocalScale.x
@@ -3051,7 +2987,6 @@ GameObject:
   - component: {fileID: 792313755}
   - component: {fileID: 792313754}
   - component: {fileID: 792313753}
-  - component: {fileID: 792313756}
   m_Layer: 5
   m_Name: Button (11)
   m_TagString: Untagged
@@ -3123,14 +3058,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 792313756}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3173,21 +3108,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792313751}
   m_CullTransparentMesh: 1
---- !u!114 &792313756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792313751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 0
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!1 &809632518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3355,7 +3275,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579868734}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &811911768
 BoxCollider:
@@ -3584,14 +3504,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: Enter text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 2150773298
   m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3604,7 +3524,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -3635,7 +3555,7 @@ MonoBehaviour:
   checkPaddingRequired: 0
   m_isRichText: 1
   m_parseCtrlCharacters: 1
-  m_isOrthographic: 0
+  m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
   m_verticalMapping: 0
@@ -3785,7 +3705,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579868734}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &970386799
 BoxCollider:
@@ -3979,7 +3899,6 @@ GameObject:
   - component: {fileID: 1008996728}
   - component: {fileID: 1008996727}
   - component: {fileID: 1008996730}
-  - component: {fileID: 1008996726}
   - component: {fileID: 1008996732}
   - component: {fileID: 1008996731}
   m_Layer: 5
@@ -4009,21 +3928,6 @@ RectTransform:
   m_AnchoredPosition: {x: -898, y: -340}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1008996726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008996724}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 0
-  indexSetForWheals: 3
-  changingParts: {fileID: 746037603}
 --- !u!114 &1008996727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4068,14 +3972,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1008996726}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForWheals
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetWheal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4205,7 +4109,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1989838766, guid: 8bf5bc1ddb846c745ba034edc015e783, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1989838766, guid: 8bf5bc1ddb846c745ba034edc015e783, type: 3}
       propertyPath: m_LocalScale.x
@@ -4352,14 +4256,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1055313450}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForWheals
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetWheal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4414,9 +4318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexSetForSpoilers: 0
-  indexSetForWheals: 2
-  changingParts: {fileID: 746037603}
 --- !u!95 &1055313451
 Animator:
   serializedVersion: 4
@@ -4615,7 +4516,6 @@ GameObject:
   - component: {fileID: 1100051595}
   - component: {fileID: 1100051594}
   - component: {fileID: 1100051593}
-  - component: {fileID: 1100051596}
   m_Layer: 5
   m_Name: Button (5)
   m_TagString: Untagged
@@ -4687,14 +4587,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1100051596}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4737,21 +4637,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1100051591}
   m_CullTransparentMesh: 1
---- !u!114 &1100051596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1100051591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 2
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!1 &1187419062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4817,7 +4702,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1202202233
 GameObject:
@@ -4831,7 +4716,6 @@ GameObject:
   - component: {fileID: 1202202237}
   - component: {fileID: 1202202236}
   - component: {fileID: 1202202235}
-  - component: {fileID: 1202202238}
   m_Layer: 5
   m_Name: Button (10)
   m_TagString: Untagged
@@ -4903,14 +4787,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1202202238}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForSpoilers
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetSpoiler
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4953,21 +4837,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202202233}
   m_CullTransparentMesh: 1
---- !u!114 &1202202238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202202233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 1
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!1 &1207591013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,7 +4968,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6060601550117877619, guid: 5cf46732fd78ac440a209459e88b69e2, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6060601550117877619, guid: 5cf46732fd78ac440a209459e88b69e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -5168,7 +5037,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6060601550117877619, guid: 5cf46732fd78ac440a209459e88b69e2, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6060601550117877619, guid: 5cf46732fd78ac440a209459e88b69e2, type: 3}
       propertyPath: m_LocalScale.x
@@ -5715,7 +5584,6 @@ GameObject:
   - component: {fileID: 1429551903}
   - component: {fileID: 1429551902}
   - component: {fileID: 1429551906}
-  - component: {fileID: 1429551905}
   - component: {fileID: 1429551908}
   - component: {fileID: 1429551907}
   m_Layer: 5
@@ -5789,14 +5657,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429551905}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForWheals
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetWheal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5839,21 +5707,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429551900}
   m_CullTransparentMesh: 1
---- !u!114 &1429551905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429551900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 0
-  indexSetForWheals: 1
-  changingParts: {fileID: 746037603}
 --- !u!114 &1429551906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5975,6 +5828,68 @@ Transform:
   - {fileID: 526461867}
   m_Father: {fileID: 746037602}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1509026605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509026607}
+  - component: {fileID: 1509026606}
+  m_Layer: 0
+  m_Name: ChangingPartsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1509026606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509026605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9356e37b2b2444519c2fa426d27c434, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spoilers:
+  - {fileID: 1892337943}
+  - {fileID: 1773211609}
+  - {fileID: 2122304440}
+  - {fileID: 980355564}
+  - {fileID: 1498168614}
+  - {fileID: 945958417}
+  - {fileID: 952107182}
+  wheals:
+  - {fileID: 1341740024}
+  - {fileID: 1000832230}
+  - {fileID: 1090123014}
+  - {fileID: 1703069062}
+  car: {fileID: 0}
+  colour:
+    name: 
+    colour: {fileID: 0}
+  BasicWheals: {fileID: 0}
+--- !u!4 &1509026607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509026605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 746.3436, y: 415.1751, z: -847.4961}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1538120314
 PrefabInstance:
@@ -6234,7 +6149,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1989838766, guid: 8bf5bc1ddb846c745ba034edc015e783, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1989838766, guid: 8bf5bc1ddb846c745ba034edc015e783, type: 3}
       propertyPath: m_LocalScale.x
@@ -6384,7 +6299,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1935821806}
   - {fileID: 970386798}
   - {fileID: 811911767}
   - {fileID: 1933244486}
@@ -6401,7 +6315,7 @@ Transform:
   - {fileID: 2120464746}
   - {fileID: 583196984}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589093026
 GameObject:
@@ -6690,6 +6604,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcb00c18dbf02344faa75c89440028e1, type: 3}
+--- !u!1001 &1658893867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.7330317
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.7330317
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.11425186
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.31
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.357
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.17
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8a457b5122350645b6d8f6da6c792e6, type: 2}
+    - target: {fileID: 919132149155446097, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
+      propertyPath: m_Name
+      value: Podstavec
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0dfcda8cf6936409d85d416da1f092b3, type: 3}
 --- !u!1001 &1672496598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6911,7 +6898,6 @@ GameObject:
   - component: {fileID: 1683687203}
   - component: {fileID: 1683687202}
   - component: {fileID: 1683687206}
-  - component: {fileID: 1683687205}
   - component: {fileID: 1683687208}
   - component: {fileID: 1683687207}
   m_Layer: 5
@@ -6985,10 +6971,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683687205}
-        m_TargetAssemblyTypeName: IndexSeter, Assembly-CSharp
-        m_MethodName: SetIndexForWheals
-        m_Mode: 1
+      - m_Target: {fileID: 1509026606}
+        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
+        m_MethodName: SetWheal
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7035,21 +7021,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683687200}
   m_CullTransparentMesh: 1
---- !u!114 &1683687205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1683687200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c8693c9bae14d668cda3587a8283ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  indexSetForSpoilers: 0
-  indexSetForWheals: 0
-  changingParts: {fileID: 746037603}
 --- !u!114 &1683687206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7328,7 +7299,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 734635264830912168, guid: e3f5570fbe8de4745a2939113aecd487, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 734635264830912168, guid: e3f5570fbe8de4745a2939113aecd487, type: 3}
       propertyPath: m_LocalScale.x
@@ -7786,7 +7757,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1579868734}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1933244487
 BoxCollider:
@@ -7856,89 +7827,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 753485355, guid: fcb00c18dbf02344faa75c89440028e1, type: 3}
   m_PrefabInstance: {fileID: 1626093045}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1935821802
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1935821806}
-  - component: {fileID: 1935821805}
-  - component: {fileID: 1935821804}
-  m_Layer: 0
-  m_Name: Cylinder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &1935821804
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935821802}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 42d1b7430ea28431c9f95485cb16afe3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1935821805
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935821802}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1935821806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935821802}
-  m_LocalRotation: {x: -0, y: 0.9190092, z: -0, w: 0.3942362}
-  m_LocalPosition: {x: 7.63, y: -10.190001, z: -9.72178}
-  m_LocalScale: {x: 6.0027995, y: 0.08962555, z: 6.0027995}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1579868734}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 133.563, z: 0}
 --- !u!1001 &1936231542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7952,7 +7840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3306262477750228195, guid: 38f4d2dbb954656409f7bace32199bd8, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3306262477750228195, guid: 38f4d2dbb954656409f7bace32199bd8, type: 3}
       propertyPath: m_LocalScale.x
@@ -8224,7 +8112,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3617985444626321967, guid: 29cabb121df3a5441a2aa3cc05056cc2, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3617985444626321967, guid: 29cabb121df3a5441a2aa3cc05056cc2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8370,7 +8258,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2119029854
 GameObject:
@@ -9615,7 +9503,7 @@ Transform:
   - {fileID: 4206015694032683}
   - {fileID: 746037602}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 424.064, z: 0}
 --- !u!4 &4352069906351273
 Transform:

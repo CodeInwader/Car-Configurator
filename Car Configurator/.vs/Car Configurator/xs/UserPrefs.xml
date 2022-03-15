@@ -1,21 +1,20 @@
 ﻿<Properties StartupConfiguration="{EBFB61BD-DF5A-B6CF-7434-86EDFCEE8033}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SaveScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/saveManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/SaveScript.cs" Line="43" Column="11" />
-      <File FileName="Assets/Scripts/CameraRotation.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/IndexSeter.cs" />
+      <File FileName="Assets/Scripts/ChangingParts.cs" Line="30" Column="35" />
+      <File FileName="Assets/Scripts/SaveScript.cs" />
+      <File FileName="Assets/Scripts/CameraRotation.cs" />
       <File FileName="Assets/Scripts/Animation.cs" />
       <File FileName="Assets/Scripts/DOTweenForWheals.cs" />
-      <File FileName="Assets/Scripts/DOTweenForSpoiler.cs" />
+      <File FileName="Assets/Scripts/DOTweenForSpoiler.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/DOTweenInfo.cs" />
-      <File FileName="Assets/Scripts/saveManager.cs" />
+      <File FileName="Assets/Scripts/saveManager.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/SaveData.cs" />
-      <File FileName="Assets/Scripts/ChangingParts.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bdec5566-6a33-4f7f-af04-be9f1e8f76ba" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b60243a5-35f2-4fc1-a1e3-e3f1dfb37de8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -29,9 +29,6 @@ public class ChangingParts : MonoBehaviour
 
     public GameObject BasicWheals;
 
-   public static int indexForSpoilers = 0;
-    public static int indexForWheals = 0;
-
    
 
     private void Start()
@@ -47,7 +44,7 @@ public class ChangingParts : MonoBehaviour
         car.GetComponent<MeshRenderer>().material = colour.colour;
     }
 
-    public void SetWheal()
+    public void SetWheal(int indexForWheals)
     {
         foreach(GameObject element in wheals)
         {
@@ -60,7 +57,7 @@ public class ChangingParts : MonoBehaviour
         wheals[indexForWheals].SetActive(true);
     }
 
-    public void SetSpoiler()
+    public void SetSpoiler(int indexForSpoilers)
     {
         
 

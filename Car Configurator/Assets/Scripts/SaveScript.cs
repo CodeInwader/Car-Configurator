@@ -45,17 +45,16 @@ public class SaveScript : MonoBehaviour
 
     public void Save()
     {
-        SaveData.indexForWheals = ChangingParts.indexForWheals;
-        SaveData.indexForSpoilers = ChangingParts.indexForSpoilers;
+        //SaveData.indexForWheals = ChangingParts.indexForWheals;
+       // SaveData.indexForSpoilers = ChangingParts.indexForSpoilers;
     }
 
 
     public void LoadSave()
     {
-        ChangingParts.indexForSpoilers = SaveData.indexForSpoilers;
-        ChangingParts.indexForWheals = SaveData.indexForWheals;
+       // ChangingParts.indexForSpoilers = SaveData.indexForSpoilers;
+        //ChangingParts.indexForWheals = SaveData.indexForWheals;
 
-       // listOfSlots.SetSpoiler();
-       // changingParts.SetWheal();
+       
     }
 }
