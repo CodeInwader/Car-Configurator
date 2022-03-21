@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/saveManager.cs" />
+    <Compile Include="Assets/Scripts/Dynamic.cs" />
     <Compile Include="Assets/Scripts/DOTweenInfo.cs" />
     <Compile Include="Assets/Scripts/CameraRotation.cs" />
     <Compile Include="Assets/Scripts/ChangingParts.cs" />

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 
 [System.Serializable]
@@ -15,7 +17,7 @@ public class Colours
 
 public class ChangingParts : MonoBehaviour
 {
-
+    
 
     List<Colours> listOfColours = new List<Colours>();
    
@@ -34,7 +36,7 @@ public class ChangingParts : MonoBehaviour
     private void Start()
     {
         wheals[3].SetActive(true);
-        colour = GetComponent<Colours>();
+        //colour = GetComponent<Colours>();
 
        
     }
@@ -44,8 +46,9 @@ public class ChangingParts : MonoBehaviour
         car.GetComponent<MeshRenderer>().material = colour.colour;
     }
 
-    public void SetWheal(int indexForWheals)
+    public void SetWheal(int indexForWheals, Sprite sourceImage)
     {
+        Debug.Log("dddd");
         foreach(GameObject element in wheals)
         {
             if(element.activeInHierarchy == true)
@@ -57,9 +60,9 @@ public class ChangingParts : MonoBehaviour
         wheals[indexForWheals].SetActive(true);
     }
 
-    public void SetSpoiler(int indexForSpoilers)
+    public void SetSpoiler(int indexForSpoilers, Sprite sourceImage)
     {
-        
+        Debug.Log("dddd");
 
         foreach (GameObject element in spoilers)
         {
@@ -69,6 +72,7 @@ public class ChangingParts : MonoBehaviour
             }
         }
 
+        Debug.Log(indexForSpoilers);
         spoilers[indexForSpoilers].SetActive(true);
 
     }
