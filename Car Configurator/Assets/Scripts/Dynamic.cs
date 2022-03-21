@@ -13,8 +13,8 @@ public class Dynamic : MonoBehaviour
 
     public ChangingParts changingParts;
 
-    int indexForSpoilers = 1;
-    int indexForWheals = 1;
+    int indexForSpoilers = -1;
+    int indexForWheals = -1;
 
     int numberOfSpoilers = 7;
     int numberOfWheals = 4;
@@ -58,26 +58,27 @@ public class Dynamic : MonoBehaviour
         foreach (GameObject element in spoilersButtonList)
         {
            ChangingParts changingPartsGet = element.GetComponent<ChangingParts>();
-
+            
            indexForSpoilers++;
+            int temp = indexForSpoilers;
             Button button = element.GetComponent<Button>();
-            button.onClick.AddListener(() => changingParts.SetSpoiler(indexForSpoilers, spoilersImageList[indexForSpoilers]));
-            
-            //changingPartsGet.SetSpoiler(indexForSpoilers, spoilersImageList[indexForSpoilers]);
-            
+            button.onClick.AddListener(() => changingParts.SetSpoiler(temp));
+
+            button.image.sprite = spoilersImageList[temp];
+
         }
 
         
         foreach (GameObject element in whealsButtonList)
         {
             ChangingParts changingPartsGet = element.GetComponent<ChangingParts>();
-
-            
             indexForWheals++;
+            int temp = indexForWheals;
             Button button = element.GetComponent<Button>();
+
+            button.image.sprite = whealsimageList[temp];
             
-            button.onClick.AddListener(() => changingParts.SetWheal(indexForWheals, whealsimageList[indexForWheals]));
-           //changingPartsGet.SetWheal(indexForWheals, whealsimageList[indexForWheals]);
+            button.onClick.AddListener(() => changingParts.SetWheal(temp));
         }
     }
 

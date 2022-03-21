@@ -5936,22 +5936,22 @@ MonoBehaviour:
   whealsButton: {fileID: 706800087115687017}
   spoilersButtonParent: {fileID: 312827436}
   whealsButtonParent: {fileID: 449791695}
-  changingParts: {fileID: 0}
+  changingParts: {fileID: 1509026606}
   spoilersButtonList: []
   whealsButtonList: []
   spoilersImageList:
-  - {fileID: 21300000, guid: 2bed4ed598f0c4587befa97277eb0fab, type: 3}
-  - {fileID: 21300000, guid: 5e925d0f23bad4ab3a0d228ec750d2d5, type: 3}
-  - {fileID: 21300000, guid: 6f28b13d8fc6b469fb0f6c3695426653, type: 3}
-  - {fileID: 21300000, guid: 5f979370ed9114657850c111d47ae1ae, type: 3}
-  - {fileID: 21300000, guid: 5cb6356a930a64b3a9a77b40168c1e87, type: 3}
-  - {fileID: 21300000, guid: 64c0acba0791e4403a6a0a854f14dcb1, type: 3}
   - {fileID: 21300000, guid: 415b770dedcf4448d8c955a4bbaf31fb, type: 3}
+  - {fileID: 21300000, guid: 64c0acba0791e4403a6a0a854f14dcb1, type: 3}
+  - {fileID: 21300000, guid: 5cb6356a930a64b3a9a77b40168c1e87, type: 3}
+  - {fileID: 21300000, guid: 5f979370ed9114657850c111d47ae1ae, type: 3}
+  - {fileID: 21300000, guid: 6f28b13d8fc6b469fb0f6c3695426653, type: 3}
+  - {fileID: 21300000, guid: 5e925d0f23bad4ab3a0d228ec750d2d5, type: 3}
+  - {fileID: 21300000, guid: 2bed4ed598f0c4587befa97277eb0fab, type: 3}
   whealsimageList:
-  - {fileID: 21300000, guid: 96e0d281770ff4e92bbf4e7570d98176, type: 3}
-  - {fileID: 21300000, guid: a7992ea6e4ae34ea091bd8b39f7c1807, type: 3}
-  - {fileID: 21300000, guid: d1df96f86f8304e018e63924df9b2091, type: 3}
   - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: d1df96f86f8304e018e63924df9b2091, type: 3}
+  - {fileID: 21300000, guid: a7992ea6e4ae34ea091bd8b39f7c1807, type: 3}
+  - {fileID: 21300000, guid: 96e0d281770ff4e92bbf4e7570d98176, type: 3}
 --- !u!1 &1498168614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7174220827610861401, guid: 1996d108eff46824c84e6b40af46a5a1, type: 3}

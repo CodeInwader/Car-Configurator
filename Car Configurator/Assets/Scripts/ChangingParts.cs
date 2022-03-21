@@ -46,7 +46,7 @@ public class ChangingParts : MonoBehaviour
         car.GetComponent<MeshRenderer>().material = colour.colour;
     }
 
-    public void SetWheal(int indexForWheals, Sprite sourceImage)
+    public void SetWheal(int indexForWheals)
     {
         Debug.Log("dddd");
         foreach(GameObject element in wheals)
@@ -57,10 +57,11 @@ public class ChangingParts : MonoBehaviour
             }
         }
 
+        Debug.Log(indexForWheals);
         wheals[indexForWheals].SetActive(true);
     }
 
-    public void SetSpoiler(int indexForSpoilers, Sprite sourceImage)
+    public void SetSpoiler(int indexForSpoilers)
     {
         Debug.Log("dddd");
 
