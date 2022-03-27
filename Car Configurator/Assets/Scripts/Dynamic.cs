@@ -16,9 +16,7 @@ public class Dynamic : MonoBehaviour
     int indexForSpoilers = -1;
     int indexForWheals = -1;
 
-    int numberOfSpoilers = 7;
-    int numberOfWheals = 4;
-
+   
 
     public List<GameObject> spoilersButtonList = new List<GameObject>();
    public List<GameObject> whealsButtonList = new List<GameObject>();
@@ -34,7 +32,7 @@ public class Dynamic : MonoBehaviour
     {
        
         //Spoilers
-        for (int i = 0; i < numberOfSpoilers; i++)
+        for (int i = 0; i < spoilersImageList.Count; i++)
         {
 
            createdGOButton = Instantiate(spoierButton, spoilersButtonParent.transform);
@@ -46,7 +44,7 @@ public class Dynamic : MonoBehaviour
 
         //Wheals
        
-        for (int i = 0; i < numberOfWheals; i++)
+        for (int i = 0; i < whealsimageList.Count; i++)
         {
            
             createdGOButton = Instantiate(whealsButton, whealsButtonParent.transform);
@@ -81,10 +79,6 @@ public class Dynamic : MonoBehaviour
             button.onClick.AddListener(() => changingParts.SetWheal(temp));
         }
     }
-
-
-
-
 
    
 }

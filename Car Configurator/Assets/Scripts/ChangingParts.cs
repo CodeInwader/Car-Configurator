@@ -36,9 +36,6 @@ public class ChangingParts : MonoBehaviour
     private void Start()
     {
         wheals[3].SetActive(true);
-        //colour = GetComponent<Colours>();
-
-       
     }
 
     public void SetColour()
@@ -48,7 +45,7 @@ public class ChangingParts : MonoBehaviour
 
     public void SetWheal(int indexForWheals)
     {
-        Debug.Log("dddd");
+       
         foreach(GameObject element in wheals)
         {
             if(element.activeInHierarchy == true)
@@ -57,13 +54,12 @@ public class ChangingParts : MonoBehaviour
             }
         }
 
-        Debug.Log(indexForWheals);
         wheals[indexForWheals].SetActive(true);
     }
 
     public void SetSpoiler(int indexForSpoilers)
     {
-        Debug.Log("dddd");
+      
 
         foreach (GameObject element in spoilers)
         {
@@ -73,7 +69,7 @@ public class ChangingParts : MonoBehaviour
             }
         }
 
-        Debug.Log(indexForSpoilers);
+        
         spoilers[indexForSpoilers].SetActive(true);
 
     }

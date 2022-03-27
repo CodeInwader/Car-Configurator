@@ -4,40 +4,68 @@ using UnityEngine;
 
 public class CameraRotation : MonoBehaviour
 {
-    public GameObject target;
-    public float speed = 5f;
+    [SerializeField] private Camera cam;
 
-    public float minFOV = 35f;
-    public float maxFOV = 100f;
-    public float sensitivity = 17f;
+    Vector3 finalDestination;
+
+    float angle;
+
+    public Vector3 direction;
+
+    float inetriaSpeed = 0;
 
     public DOTweenInfo info;
 
-   
+    Vector3 startPosition;
 
-    [SerializeField]
-    private GameObject camera;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    private Vector3 previousPosition;
     // Update is called once per frame
     void Update()
     {
-        //Rotating Camera
-        if (Input.GetKey(KeyCode.Mouse0) && info.watchingParts == false)
+       if (Input.GetMouseButtonDown(0))
         {
-            transform.RotateAround(target.transform.position, transform.up, Input.GetAxis("Mouse X") * speed);
-            
+            previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
         }
 
+        if (  Input.GetMouseButton(0) &&  !info.watchingParts  /*cam.transform.position.y < -10.5*/ )
+        {
+             direction = previousPosition - cam.ScreenToViewportPoint(Input.mousePosition);
+
+            cam.transform.position = new Vector3(-1.3f, -15f, -4f);
+
+            cam.transform.Rotate(new Vector3(1, 0, 0), direction.y * 90);
+            cam.transform.Rotate(new Vector3(0,1,0),  -direction.x * 90, Space.World);
+            cam.transform.Translate(0, 0, -5);
+
+
+            previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+
+            
+            inetriaSpeed = 90;
+
+
+        }
+       
+        
+           if (inetriaSpeed > 0  /*cam.transform.position.y < -10.5*/)
+           {
+            cam.transform.position = new Vector3(-1.3f, -15f, -4f);
+
+            cam.transform.Rotate(new Vector3(1, 0, 0), direction.y * inetriaSpeed);
+            cam.transform.Rotate(new Vector3(0, 1, 0), -direction.x * inetriaSpeed, Space.World);
+            cam.transform.Translate(0, 0, -5);
+
+            previousPosition = cam.ScreenToViewportPoint(Input.mousePosition);
+
+            inetriaSpeed = inetriaSpeed - 0.25f;
+           }
+
+       
+       
         
        
     }
+   
 
-    
+
 }
