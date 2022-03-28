@@ -57,7 +57,7 @@ public class Dynamic : MonoBehaviour
         {
            ChangingParts changingPartsGet = element.GetComponent<ChangingParts>();
             
-           indexForSpoilers++;
+            indexForSpoilers++;
             int temp = indexForSpoilers;
             Button button = element.GetComponent<Button>();
             button.onClick.AddListener(() => changingParts.SetSpoiler(temp));

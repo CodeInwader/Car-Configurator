@@ -350,6 +350,7 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Animation.cs"
+"Assets/Scripts/ButtonsScript.cs"
 "Assets/Scripts/CameraRotation.cs"
 "Assets/Scripts/ChangingParts.cs"
 "Assets/Scripts/DOTweenForSpoiler.cs"
@@ -359,6 +360,7 @@
 "Assets/Scripts/SaveData.cs"
 "Assets/Scripts/saveManager.cs"
 "Assets/Scripts/SaveScript.cs"
+"Assets/Scripts/SlotsData.cs"
 -langversion:9.0
 
 /deterministic

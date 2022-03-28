@@ -1,60 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-
-[System.Serializable]
-class ListOfSlots
-{
-    public ChangingParts changingParts;
-}
 
 public class SaveScript : MonoBehaviour
 {
 
-    List<ListOfSlots> listOfSlots = new List<ListOfSlots>();
-   
+    public SaveData saveData;
+    public ChangingParts changingParts;
 
-   
+   public List<GameObject> listOfSaveSlots = new List<GameObject>();
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-    public void WantToSave()
-    {
-        /*
-        foreach (GameObject element in listOfSlots)
+        foreach (GameObject element in listOfSaveSlots)
         {
-            if (element.)
-            {
+            SlotsData s = element.GetComponent<SlotsData>();
 
+            if (s.slotIsFull)
+            {
+                Button button = element.GetComponent<Button>();
+                button.onClick.AddListener(() => LoadSave());
             }
         }
-        */
     }
 
     public void Save()
     {
-        //SaveData.indexForWheals = ChangingParts.indexForWheals;
-       // SaveData.indexForSpoilers = ChangingParts.indexForSpoilers;
+        saveManager.Save(saveData);
+
+        foreach (GameObject element in listOfSaveSlots)
+        {
+            SlotsData s = element.GetComponent<SlotsData>();
+
+            if (!s.slotIsFull)
+            {
+                s.slotIsFull = true;
+                Button button = element.GetComponent<Button>();
+                button.onClick.AddListener(() => LoadSave());
+                break;
+            }
+        }
     }
 
 
     public void LoadSave()
     {
-       // ChangingParts.indexForSpoilers = SaveData.indexForSpoilers;
-        //ChangingParts.indexForWheals = SaveData.indexForWheals;
-
-       
+        saveData = saveManager.Load();
     }
 }
