@@ -23,6 +23,8 @@ public class Dynamic : MonoBehaviour
    public List<Sprite> spoilersImageList = new List<Sprite>();
    public  List<Sprite> whealsimageList = new List<Sprite>();
 
+    public List<GameObject> allColours = new List<GameObject>();
+
      GameObject createdGOButton;
    
 
@@ -80,5 +82,9 @@ public class Dynamic : MonoBehaviour
         }
     }
 
-   
+
+
+
+    // Color
+
 }

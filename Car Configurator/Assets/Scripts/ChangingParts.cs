@@ -29,10 +29,6 @@ public class ChangingParts : MonoBehaviour
 
     public Colours colour;
 
-    public SaveData saveData;
-
-    public SaveScript saveScript;
-
     public GameObject BasicWheals;
 
     public int currentIndexForSpoilers;
@@ -42,7 +38,7 @@ public class ChangingParts : MonoBehaviour
     {
         wheals[3].SetActive(true);
         currentIndexForWheals = 3;
-        currentIndexForSpoilers = 0;
+        currentIndexForSpoilers = -1;
     }
 
     public void SetColour()
@@ -50,11 +46,34 @@ public class ChangingParts : MonoBehaviour
         car.GetComponent<MeshRenderer>().material = colour.colour;
     }
 
+    public void Loadconf(int indexForWheals, int indexForSpoiler)
+    {
+        foreach (GameObject element in wheals)
+        {
+            if (element.activeInHierarchy == true)
+            {
+                element.SetActive(false);
+            }
+        }
+
+        foreach (GameObject element in spoilers)
+        {
+            if (element.activeInHierarchy == true)
+            {
+                element.SetActive(false);
+            }
+        }
+
+        wheals[indexForWheals].SetActive(true);
+        spoilers[indexForSpoiler].SetActive(true);
+
+    }
+
+
     public void SetWheal(int indexForWheals)
     {
        
-        saveData.indexForWhealsToSave = indexForWheals;
-        Debug.Log(indexForWheals);
+       
 
         foreach (GameObject element in wheals)
         {
@@ -65,11 +84,13 @@ public class ChangingParts : MonoBehaviour
         }
 
         wheals[indexForWheals].SetActive(true);
+        currentIndexForWheals = indexForWheals;
+        
     }
 
     public void SetSpoiler(int indexForSpoilers)
     {
-        saveData.indexForSpoilersToSave = indexForSpoilers;
+        //saveData.indexForSpoilersToSave = indexForSpoilers;
         
 
         foreach (GameObject element in spoilers)
@@ -82,7 +103,8 @@ public class ChangingParts : MonoBehaviour
 
         
         spoilers[indexForSpoilers].SetActive(true);
-
+        currentIndexForSpoilers = indexForSpoilers;
+       
     }
 
 }

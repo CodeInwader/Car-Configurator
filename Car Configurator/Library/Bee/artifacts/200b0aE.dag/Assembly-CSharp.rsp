@@ -357,10 +357,7 @@
 "Assets/Scripts/DOTweenForWheals.cs"
 "Assets/Scripts/DOTweenInfo.cs"
 "Assets/Scripts/Dynamic.cs"
-"Assets/Scripts/SaveData.cs"
-"Assets/Scripts/saveManager.cs"
-"Assets/Scripts/SaveScript.cs"
-"Assets/Scripts/SlotsData.cs"
+"Assets/Scripts/SaveM.cs"
 -langversion:9.0
 
 /deterministic
