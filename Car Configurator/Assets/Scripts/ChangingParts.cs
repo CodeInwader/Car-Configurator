@@ -14,7 +14,7 @@ public class Colours
 
 
 
-
+[SerializeField]
 public class ChangingParts : MonoBehaviour
 {
     
@@ -24,6 +24,10 @@ public class ChangingParts : MonoBehaviour
 
     public List<GameObject> spoilers = new List<GameObject>();
     public List<GameObject> wheals = new List<GameObject>();
+    public List<Material> colourList = new List<Material>();
+
+   
+
 
     public GameObject car;
 
@@ -33,20 +37,23 @@ public class ChangingParts : MonoBehaviour
 
     public int currentIndexForSpoilers;
     public int currentIndexForWheals;
+    public int currentIndexForColour;
 
     private void Start()
     {
         wheals[3].SetActive(true);
         currentIndexForWheals = 3;
         currentIndexForSpoilers = -1;
+        car.GetComponent<MeshRenderer>().material = colourList[0];
     }
 
-    public void SetColour()
+    public void SetColour(int indexForColour)
     {
-        car.GetComponent<MeshRenderer>().material = colour.colour;
+        car.GetComponent<MeshRenderer>().material = colourList[indexForColour];
+        currentIndexForColour = indexForColour;
     }
 
-    public void Loadconf(int indexForWheals, int indexForSpoiler)
+    public void Loadconf(int indexForWheals, int indexForSpoiler, int indexForColour)
     {
         foreach (GameObject element in wheals)
         {
@@ -66,6 +73,7 @@ public class ChangingParts : MonoBehaviour
 
         wheals[indexForWheals].SetActive(true);
         spoilers[indexForSpoiler].SetActive(true);
+        car.GetComponent<MeshRenderer>().material = colourList[indexForColour];
 
     }
 

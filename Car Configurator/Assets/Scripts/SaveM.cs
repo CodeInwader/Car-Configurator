@@ -4,13 +4,14 @@ using UnityEngine;
 using Newtonsoft.Json;
 using System.IO;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class Configuration
 {
     public int indexForWhealsToSave;
     public int indexForSpoilersToSave;
-
+    public int indexForColourToSave;
     public string nameOfConfiguration;
 }
 
@@ -24,7 +25,8 @@ public class SaveM : MonoBehaviour
 
     public ChangingParts changingparts;
 
-    public InputField inputfield;
+    public Text textFrominputField;
+    
     //Slots
     public Transform paretnOfSavesTransform;
     public GameObject slotPrefab;
@@ -38,30 +40,49 @@ public class SaveM : MonoBehaviour
         LoadFromJson();
     }
 
+    private void Start()
+    {
+        for (int i = 0; i < allConf.Count; i++)
+        {
+            GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
+            Button button = currentslot.GetComponent<Button>();
+            int temp = numOfSlots;
+            button.onClick.AddListener(() => Load(temp));
+            numOfSlots++;
+        }
+        
+    }
+
     public void Save()
     {
         Configuration save = new Configuration();
 
         save.indexForSpoilersToSave = changingparts.currentIndexForSpoilers;
         save.indexForWhealsToSave = changingparts.currentIndexForWheals;
-       
+        save.indexForColourToSave = changingparts.currentIndexForColour;
+
+
         allConf.Add(save);
 
         SaveToJson(allConf);
 
         //Slots creating
-        
 
-        GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);   
+        
+        GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
+
+        save.nameOfConfiguration = textFrominputField.text;
+        
+        currentslot.GetComponentInChildren<Text>().text = save.nameOfConfiguration;
+       
         Button button = currentslot.GetComponent<Button>();
-        button.GetComponentInChildren<Text>().text = inputfield.text;
         int temp = numOfSlots;
         button.onClick.AddListener(() => Load(temp));
     }
 
     public void Load(int indexforconfig)
     {
-        changingparts.Loadconf(allConf[indexforconfig].indexForWhealsToSave , allConf[indexforconfig].indexForSpoilersToSave);  
+        changingparts.Loadconf(allConf[indexforconfig].indexForWhealsToSave , allConf[indexforconfig].indexForSpoilersToSave, allConf[indexforconfig].indexForColourToSave);  
     }
    
 
@@ -74,20 +95,7 @@ public class SaveM : MonoBehaviour
         
     }
 
-    private void Update()
-    {
-        //Slots creating from save file
-        if (numOfSlots != allConf.Count)
-        {
-            GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
-            Button button = currentslot.GetComponent<Button>();
-            int temp = numOfSlots;
-            button.onClick.AddListener(() => Load(temp));
-
-            numOfSlots++;
-
-        }
-    }
+   
 
     private void LoadFromJson()
     {
@@ -96,7 +104,8 @@ public class SaveM : MonoBehaviour
             Configuration save = new Configuration();
             save.indexForSpoilersToSave = 0;
             save.indexForWhealsToSave = 0;
-
+            save.indexForColourToSave = 0;
+            save.nameOfConfiguration = "No Name";
 
             allConf.Add(save);
             
@@ -110,10 +119,5 @@ public class SaveM : MonoBehaviour
         allConf = JsonConvert.DeserializeObject<List<Configuration>>(json);
 
         
-       
-        
-       
-       
-
     }
 }
