@@ -47,7 +47,9 @@ public class SaveM : MonoBehaviour
             GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
             Button button = currentslot.GetComponent<Button>();
             int temp = numOfSlots;
+            currentslot.GetComponentInChildren<Text>().text = allConf[i].nameOfConfiguration == null ? "No name" : allConf[i].nameOfConfiguration;
             button.onClick.AddListener(() => Load(temp));
+           
             numOfSlots++;
         }
         
@@ -68,21 +70,34 @@ public class SaveM : MonoBehaviour
 
         //Slots creating
 
-        
+
         GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
 
         save.nameOfConfiguration = textFrominputField.text;
-        
+
         currentslot.GetComponentInChildren<Text>().text = save.nameOfConfiguration;
-       
+
         Button button = currentslot.GetComponent<Button>();
-        int temp = numOfSlots;
+        int temp = allConf.Count -1;
         button.onClick.AddListener(() => Load(temp));
+
+
+
     }
 
     public void Load(int indexforconfig)
     {
+
         changingparts.Loadconf(allConf[indexforconfig].indexForWhealsToSave , allConf[indexforconfig].indexForSpoilersToSave, allConf[indexforconfig].indexForColourToSave);  
+    }
+
+    public void DeleteSlot(Button button, Configuration conf)
+    {
+       
+        Destroy(button);
+        allConf.Remove(conf);
+        
+        
     }
    
 

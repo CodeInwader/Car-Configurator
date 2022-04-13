@@ -356,7 +356,7 @@
 "Assets/Scripts/DOTweenForSpoiler.cs"
 "Assets/Scripts/DOTweenForWheals.cs"
 "Assets/Scripts/DOTweenInfo.cs"
-"Assets/Scripts/Dynamic.cs"
+"Assets/Scripts/DynamicUI.cs"
 "Assets/Scripts/SaveM.cs"
 -langversion:9.0
 

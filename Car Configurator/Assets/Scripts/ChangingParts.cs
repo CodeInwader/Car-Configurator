@@ -41,10 +41,12 @@ public class ChangingParts : MonoBehaviour
 
     private void Start()
     {
-        wheals[3].SetActive(true);
+        BasicWheals.SetActive(true);
+        
         currentIndexForWheals = 3;
-        currentIndexForSpoilers = -1;
+        currentIndexForSpoilers = 7;
         car.GetComponent<MeshRenderer>().material = colourList[0];
+        
     }
 
     public void SetColour(int indexForColour)
@@ -70,6 +72,8 @@ public class ChangingParts : MonoBehaviour
                 element.SetActive(false);
             }
         }
+
+       
 
         wheals[indexForWheals].SetActive(true);
         spoilers[indexForSpoiler].SetActive(true);

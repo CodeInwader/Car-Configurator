@@ -7,8 +7,8 @@ public class DOTweenInfo : MonoBehaviour
     public static Vector3 lastCameraPosition;
     public static Vector3 lastCameraRotation;
 
-    [SerializeField]
-    private GameObject camera;
+    
+    public GameObject camera;
 
     public  bool watchingParts = false;
     public  bool isOnlastTransform = true;

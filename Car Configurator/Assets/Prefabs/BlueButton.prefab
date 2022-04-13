@@ -121,19 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3485540054725432607}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3485540054725432605}
-        m_TargetAssemblyTypeName: ChangingParts, Assembly-CSharp
-        m_MethodName: SetColour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &3485540054725432605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,10 +137,11 @@ MonoBehaviour:
   spoilers: []
   wheals: []
   colourList: []
-  car: {fileID: 0}
+  car: {fileID: 8114242398974797269, guid: 4608b5bf6dfa24b44a1aa4247fcfcb69, type: 3}
   colour:
     name: Blue
     colour: {fileID: 2100000, guid: d9c9d8ff857d2cf418745e1b569ee90c, type: 2}
-  BasicWheals: {fileID: 0}
+  BasicWheals: {fileID: 8114242398974797269, guid: 4608b5bf6dfa24b44a1aa4247fcfcb69, type: 3}
   currentIndexForSpoilers: 0
   currentIndexForWheals: 0
+  currentIndexForColour: 0

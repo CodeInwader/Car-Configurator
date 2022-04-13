@@ -10,10 +10,7 @@ public class DOTweenForSpoiler : MonoBehaviour
 
     public DOTweenInfo info;
 
-    public GameObject camera;
-
-
-
+   
     private void OnMouseDown()
     {
 
@@ -31,14 +28,14 @@ public class DOTweenForSpoiler : MonoBehaviour
 
         info.watchingParts = true;
 
-        DOTweenInfo.lastCameraPosition = camera.transform.position;
-        DOTweenInfo.lastCameraRotation = camera.transform.rotation.eulerAngles;
+        DOTweenInfo.lastCameraPosition = info.camera.transform.position;
+        DOTweenInfo.lastCameraRotation = info.camera.transform.rotation.eulerAngles;
 
         PosVector = spoilerPosTransform.position;
-        camera.transform.DOMove(PosVector, 1);
+        info.camera.transform.DOMove(PosVector, 1);
 
         PosVector = spoilerPosTransform.rotation.eulerAngles;
-        camera.transform.DORotate(PosVector, 1);
+        info.camera.transform.DORotate(PosVector, 1);
 
         PosVector = spoilerPosTransform.position;
     }
@@ -47,7 +44,7 @@ public class DOTweenForSpoiler : MonoBehaviour
 
     private void Update()
     {
-        if(camera.transform.position == PosVector)
+        if(info.camera.transform.position == PosVector)
         {
             info.isOnlastTransform = false;
         }
@@ -56,9 +53,9 @@ public class DOTweenForSpoiler : MonoBehaviour
         {
             info.watchingParts = false;
 
-            camera.transform.DOMove(DOTweenInfo.lastCameraPosition, 1);
+            info.camera.transform.DOMove(DOTweenInfo.lastCameraPosition, 1);
 
-            camera.transform.DORotate(DOTweenInfo.lastCameraRotation, 1);
+            info.camera.transform.DORotate(DOTweenInfo.lastCameraRotation, 1);
 
         }
 
