@@ -19,10 +19,11 @@ public class CameraRotation : MonoBehaviour
 
     float inetriaSpeed = 0;
 
+    float topLimiter2 = -15.9f;
     float topLimiter = -15.3f;
-    float downLomiter = -13.96f;
+    float downLimiter = -13.96f;
 
-    float downlimiterForgg = -10.5f;
+    float downlimiter2 = -10.5f;
 
     public DOTweenInfo info;
 
@@ -52,7 +53,7 @@ public class CameraRotation : MonoBehaviour
                 cam.transform.Rotate(new Vector3(0, 1, 0), -direction.x * inetriaSpeed, Space.World);
 
             
-            if ( direction.y < 0 && gg.transform.position.y  <= -15.9 || direction.y > 0 && gg.transform.position.y >= -15.3f)
+            if ( direction.y < 0 && gg.transform.position.y  <= /*-15.9*/ topLimiter2 || direction.y > 0 && gg.transform.position.y >= /*-15.3f*/ topLimiter)
             {
                 inetriaSpeed = 0;
             }
@@ -68,12 +69,12 @@ public class CameraRotation : MonoBehaviour
 
        
 
-        if (inetriaSpeed > 0 && !info.watchingParts && cam.transform.position.y <= -13.96)
+        if (inetriaSpeed > 0 && !info.watchingParts && cam.transform.position.y <= /*-13.96*/ downLimiter)
         {
                 inetriaSpeed = 0;
         }
 
-        if (inetriaSpeed > 0 && !info.watchingParts && gg.transform.position.y ! <= -10.5)
+        if (inetriaSpeed > 0 && !info.watchingParts && gg.transform.position.y ! <=/*-10.5*/ downlimiter2)
            {
             cam.transform.position = new Vector3(-1.3f, -15f, -4f);
 

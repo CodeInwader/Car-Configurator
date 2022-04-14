@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{EBFB61BD-DF5A-B6CF-7434-86EDFCEE8033}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ChangingParts.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CameraRotation.cs">
     <Files>
       <File FileName="Assets/Scripts/CameraRotation.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/ChangingParts.cs" Line="58" Column="86" />
       <File FileName="Assets/Scripts/DynamicUI.cs" />
       <File FileName="Assets/Scripts/SaveM.cs" />
       <File FileName="Assets/Scripts/ButtonsScript.cs" />
-      <File FileName="../../../../../Users/krystofjezdik/Library/Application Support/DefaultCompany/Car Configurator/save.json" />
+      <File FileName="../../../../../Users/krystofjezdik/Library/Application Support/DefaultCompany/Car Configurator/save.json" Line="1" Column="3" />
       <File FileName="Assets/Scripts/DOTweenInfo.cs" />
       <File FileName="Assets/Scripts/DOTweenForWheals.cs" />
       <File FileName="Assets/Scripts/DOTweenForSpoiler.cs" />
@@ -15,7 +15,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="325a2c4d-f1c6-4b65-afb2-4480bd29a913" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d08e627b-3425-480b-8a22-40b1502953b3" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
