@@ -66,7 +66,7 @@ public class SaveM : MonoBehaviour
 
         allConf.Add(save);
 
-        SaveToJson(allConf);
+        
 
         //Slots creating
 
@@ -74,7 +74,7 @@ public class SaveM : MonoBehaviour
         GameObject currentslot = Instantiate(slotPrefab, paretnOfSavesTransform);
 
         save.nameOfConfiguration = textFrominputField.text;
-
+        SaveToJson(allConf);
         currentslot.GetComponentInChildren<Text>().text = save.nameOfConfiguration;
 
         Button button = currentslot.GetComponent<Button>();
